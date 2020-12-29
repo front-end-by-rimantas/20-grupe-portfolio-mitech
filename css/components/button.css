@@ -1,7 +1,17 @@
 .btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  font-family: "CerebriSans";
+  font-weight: 300;
+  padding: 16px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
 }
 
 .btn:hover {
+  transform: translateY(-2px);
 }
 
 .btn-round {
