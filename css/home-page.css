@@ -1,13 +1,22 @@
 /* reset, main */
-@import './components/variables.css';
-@import './components/reset.css';
+@import "./components/variables.css";
+@import "./components/reset.css";
 /* 3rd party */
-@import './components/bootstrap-grid.min.css';
+@import "./components/bootstrap-grid.min.css";
 /* components */
-@import './components/header.css';
+@import "./components/header.css";
 
 /* custom: home page sections */
-
 /* header */
 /* hero */
-/* services */
+/* logo banner */
+/* OUR SERVICES */
+/* OUR COMPANY */
+/* HIRE US, WHY NOT? */
+/* fun fact wrapper */
+/* video */
+/* CASE STUDIES */
+/* TESTIMONIALS */
+/* BLOGS & NEWS */
+/* contacts */
+/* footer */
