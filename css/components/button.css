@@ -3,3 +3,63 @@
 
 .btn:hover {
 }
+
+.btn-round {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: background-color 0.5s;
+}
+
+.btn-round::before {
+  content: "➜";
+}
+
+.btn-round:hover::after {
+  position: absolute;
+  z-index: -5;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  animation: pulse 3s ease-out infinite forwards;
+}
+
+.btn-round:hover {
+  background-color: var(--main-color);
+}
+
+@keyframes pulse {
+  60% {
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+    border: 1px solid var(--main-color);
+  }
+  99% {
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+  }
+}
