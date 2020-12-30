@@ -11,7 +11,7 @@ This project is for educational purposes only. Pull request are welcome, but pri
 
 Site published at https://github.com/front-end-by-rimantas/20-grupe-portfolio-mitech
 
-Design: `Mitech` (https://demo.hasthemes.com/mitech-preview/index.html)
+Design: `Mitech` (https://demo.hasthemes.com/mitech-preview/index-infotechno.html)
 
 ## Project features
 
@@ -25,16 +25,16 @@ Design: `Mitech` (https://demo.hasthemes.com/mitech-preview/index.html)
 
 ## Authors
 
-[Rimantas] (https://github.com/belauzas)
+[Rimantas](https://github.com/belauzas)
 
-[Edvardas] (https://github.com/Edvardas1989)
+[Edvardas](https://github.com/Edvardas1989)
 
-[Jolita] (https://github.com/sunshinepro)
+[Jolita](https://github.com/sunshinepro)
 
-[Jonas] (https://github.com/JonasDudonis)
+[Jonas](https://github.com/JonasDudonis)
 
-[Lukas] (https://github.com/Lukasring)
+[Lukas](https://github.com/Lukasring)
 
-[Roberta] (https://github.com/Roberta2020)
+[Roberta](https://github.com/Roberta2020)
 
-[Tomas] (https://github.com/tomasvilimas)
+[Tomas](https://github.com/tomasvilimas)
