@@ -5,6 +5,7 @@
 @import "./components/bootstrap-grid.min.css";
 /* components */
 @import "./components/header.css";
+@import "./components/service-card.css";
 
 /* custom: home page sections */
 /* header */
