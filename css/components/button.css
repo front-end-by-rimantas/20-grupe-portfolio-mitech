@@ -66,6 +66,16 @@
 .btn-round:focus {
   outline: none;
 }
+.btn-arrow {
+  display: inline-block;
+  content: "➜";
+  color:#343a40;
+  background-color: green;
+  margin-left: 20px;
+  float: right;
+  
+
+}
 
 @keyframes pulse {
   60% {

@@ -1,0 +1,54 @@
+.left-company-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 90px 20px 0px;
+}
+.company-paragraph {
+    color: #696969;
+    font-family: "CerebriSans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: justify;
+}
+.right-company-column {
+    padding: 30px 0px 20px;
+}
+.list {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    row-gap: 60px;
+    height: 200%;
+    text-align: left;
+    font-family: "CerebriSans";
+    font-size: 19px;
+    font-style: normal;
+}
+.list-member {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    height: 150%;
+}
+.list-member > .list-number {
+    grid-column: 1/2;
+}
+.list-number {
+    color: var(--accent-color);
+    
+}
+.faq {
+    grid-column: 2/3;
+    height: 100%;
+    margin-top: 12px;
+    border-top: 2px solid #ededed;
+}
+.faq > h3 {
+    color:#343a40;
+    margin-top: 20px;
+}
+.btn-arrow {
+    height: 30%;
+}
