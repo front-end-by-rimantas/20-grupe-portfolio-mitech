@@ -13,7 +13,7 @@
 @font-face {
   font-family: "CerebriSans";
   src: url(../../fonts/cerebrisans/CerebriSans-ExtraBold.ttf);
-  font-weight: extra-bold;
+  font-weight: bolder;
   font-style: normal;
 }
 @font-face {
@@ -25,18 +25,19 @@
 @font-face {
   font-family: "CerebriSans";
   src: url(../../fonts/cerebrisans/CerebriSans-Medium.ttf);
-  font-weight: medium;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CerebriSans";
   src: url(../../fonts/cerebrisans/CerebriSans-SemiBold.ttf);
-  font-weight: semi-bold;
+  font-weight: 600;
   font-style: normal;
 }
 
 :root {
   --main-color: #086ad8;
   --secondary-color: #d2a98e;
+  --accent-color: #ababab;
 }
