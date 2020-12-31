@@ -1,8 +1,7 @@
 .service-card{
     display: inline-block;
-    width: 300px;
-    height: 320px;
-    /* background-color: tomato;  */
+    /* width: 300px; */
+    /* height: 320px; */
     text-align: center;
     border-radius: 4px;
     box-shadow: 3px 5px 5px lightgray;
@@ -12,15 +11,15 @@
     width: 100px;
     /* padding: 50px; */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+   
 }
 
 .s-card-text{
-    margin: 50px 30px 150px 30px;
+    margin: 20px 30px 60px 30px;
 }
 .s-card-text > h3{
-    font-size: 400;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 .s-card-text > p{
