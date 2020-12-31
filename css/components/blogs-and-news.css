@@ -3,62 +3,41 @@
     font-size: 14px;
     letter-spacing: 3px;
     margin-top: 20px;
-    
-    
-    
 }
-
+ 
 .articles{
    font-size: 37px;
    margin-top: 20px;
-  
-   
- 
 }
 
 .updated {
     color: var(--main-color);
     font-size: 37px;
-    margin-bottom: 30px;
-   
-
+    margin-bottom: 30px;  
 }
 
-.list{
+.updated-list> a{
+    display: inline-block;
     color: var(--accent-color);
-    
     font-size: 15px;
     text-decoration: none;
-    line-height: 45px;
-    margin-bottom: 20px;
-    
-    
-    
-    
-    
-
+    margin-bottom: 30px;
 }
 
-.list :hover{
-    
+.updated-list :hover{
     color: var(--main-color);
-  
-
 }
 
 .blog-photos {
 
     width: 100%;
     border-radius: 5px;
+    position:relative;
 }
 
 .blog-photos:hover {
-
-    position:relative;
     bottom:10px;
     
-    display:block;
-    z-index:999;
 }
 
 .blog-calendar{
@@ -70,20 +49,18 @@
   
 }   
 
-.ways{
+.big-text{
     font-size: 25px;
     text-align: left;
     line-height: 40px;
-    margin-top: 15px;
-
-    
+    margin-top: 15px; 
 }
 
-.playrole{
+.intro-text{
 
     color: var(--accent-color);
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     font-size: 15px;
     margin-top: 20px;
