@@ -31,13 +31,14 @@
     display: grid;
     grid-template-columns: 0.1fr 1fr;
     height: 150%;
+    cursor: pointer;
 }
+
 .list-member > .list-number {
     grid-column: 1/2;
 }
 .list-number {
-    color: var(--accent-color);
-    
+    color: var(--accent-color);    
 }
 .faq {
     grid-column: 2/3;
@@ -49,6 +50,40 @@
     color:#343a40;
     margin-top: 20px;
 }
-h3 > div {
-    height: 30%;
+.faq > h3:after {
+    content: "➜";
+    display: inline-block;
+    float: right;
+    color:#343a40;
 }
+.list-member:hover > .list-number {
+    color: var(--main-color);
+}
+.list-member:hover > .faq > h3 {
+    color: var(--main-color);
+}
+.list-member:hover > .faq > h3::after {
+    color: var(--main-color);
+    animation: slide 0.8s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-20px);
+        transition: all 0.3s ease-in;
+        opacity: 0;
+    }
+    10% {
+        opacity: 80;
+    }
+    20% {
+        opacity: 100;
+    }
+    50% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
