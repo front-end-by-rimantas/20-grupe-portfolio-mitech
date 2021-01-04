@@ -37,4 +37,4 @@ Design: "Mitech" (https://demo.hasthemes.com/mitech-preview/index-infotechno.htm
 
 [Roberta](https://github.com/Roberta2020)
 
-[Tomas] (https://github.com/tomasvilimas)
+[Tomas](https://github.com/tomasvilimas)
