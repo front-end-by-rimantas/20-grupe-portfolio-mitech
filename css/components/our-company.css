@@ -19,9 +19,8 @@
 }
 .list {
     display: grid;
-    grid-template-rows: 50px 50px 50px;
-    row-gap: 60px;
-    height: 200%;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px;
     text-align: left;
     font-family: "CerebriSans";
     font-size: 19px;
@@ -29,8 +28,7 @@
 }
 .list-member {
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    height: 150%;
+    grid-template-columns: 50px 1fr;
     cursor: pointer;
     text-decoration: none;
 }
