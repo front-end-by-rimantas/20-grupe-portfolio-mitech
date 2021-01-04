@@ -27,7 +27,6 @@
     font-size: 19px;
     font-style: normal;
 }
-
 .list-member {
     display: grid;
     grid-template-columns: 0.1fr 1fr;
@@ -35,7 +34,6 @@
     cursor: pointer;
     text-decoration: none;
 }
-
 .list-member > .list-number {
     grid-column: 1/2;
 }
@@ -68,7 +66,6 @@
     animation: in 0.8s;
 }
 
-
 @keyframes in {
     0% {
         transform: translateX(-20px);
@@ -88,9 +85,3 @@
         opacity: 1;
     }
 }
-
-
-
-
-
-
