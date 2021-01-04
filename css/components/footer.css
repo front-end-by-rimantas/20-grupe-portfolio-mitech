@@ -1,0 +1,92 @@
+.address{
+
+    color: var(--accent-color);
+    line-height: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    
+}
+.contact-email{
+
+    color: var(--accent-color);
+    line-height: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
+.mobile-phone{
+    display: inline-block;
+    width: 100%;
+    color: black;
+    line-height: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.mitech-link{
+    color: var(--main-color);
+    line-height: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-decoration: none;
+
+}
+
+.links-descriptions{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+  font-style: normal;
+  margin-bottom: 20px;
+
+}
+.all-links> a{
+    display: inline-block;
+    width: 100%;
+    color: var(--accent-color);
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+.google-apple> a{
+    display: inline-block;
+    margin-top: 20px;
+}
+.all-rights-reserved{
+    color: var(--accent-color);
+    line-height: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
+.all-rights-reserved:hover{
+    color: var(--main-color);
+
+}
+
+
+.lower-footer{
+    margin-top: 60px ;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px; */
+}
