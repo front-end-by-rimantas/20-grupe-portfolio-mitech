@@ -1,0 +1,6 @@
+.hero-img {
+    background-image: url(/images/hero/home-infotechno-main-slider-slide-01-image-01.png);
+    background-repeat: no-repeat;
+    /* display: inline-block; */
+    max-width: 100%;
+}
