@@ -1,6 +1,35 @@
+.hero-text {
+    background-color: #F4EFE9;
+    vertical-align: middle;
+    
+}
+
+h7.hero {
+    color: var(--main-color);
+    font-size: 20x;
+    font-weight: lighter;
+}
+
+h1.hero {
+    display: inline-block;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+p.hero {
+    font-size: 13px;
+    font-weight: 100;
+
+}
+
 .hero-img {
     background-image: url(/images/hero/home-infotechno-main-slider-slide-01-image-01.png);
     background-repeat: no-repeat;
-    /* display: inline-block; */
-    max-width: 100%;
+    background-color: #F4EFE9;
+    position: relative;
+    background-size: contain;
+
 }
