@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 .company-paragraph {
     color: #696969;
@@ -15,7 +15,7 @@
     text-align: justify;
 }
 .right-company-column {
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 .list {
     display: grid;
@@ -27,11 +27,13 @@
     font-size: 19px;
     font-style: normal;
 }
+
 .list-member {
     display: grid;
     grid-template-columns: 0.1fr 1fr;
     height: 150%;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .list-member > .list-number {
@@ -52,7 +54,6 @@
 }
 .faq > h3:after {
     content: "➜";
-    display: inline-block;
     float: right;
     color:#343a40;
 }
@@ -64,18 +65,16 @@
 }
 .list-member:hover > .faq > h3::after {
     color: var(--main-color);
-    animation: fadeIn 1s linear;
+    animation: in 0.8s;
 }
 
-@keyframes fadeIn {
+
+@keyframes in {
     0% {
         transform: translateX(-20px);
         opacity: 0;
     }
     10% {
-        opacity: 0.1;
-    }
-    20% {
         opacity: 0.2;
     }
     30% {
@@ -89,6 +88,8 @@
         opacity: 1;
     }
 }
+
+
 
 
 
