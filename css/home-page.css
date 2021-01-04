@@ -1,17 +1,18 @@
 /* reset, main */
-@import "./components/variables.css";
-@import "./components/reset.css";
+@import './components/variables.css';
+@import './components/reset.css';
 /* 3rd party */
-@import "./components/bootstrap-grid.min.css";
+@import './components/bootstrap-grid.min.css';
 /* components */
-@import "./components/header.css";
-@import "./components/button.css";
+@import './components/header.css';
+@import './components/link.css';
+@import './components/button.css';
 /* custom: home page sections */
 /* header */
 /* hero */
 /* logo banner */
 /* OUR SERVICES */
-@import "./components/our-servicers.css";
+@import './components/our-servicers.css';
 /* OUR COMPANY */
 @import "./components/our-company.css";
 /* HIRE US, WHY NOT? */
