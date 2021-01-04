@@ -1,0 +1,49 @@
+.link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'CerebriSans';
+  color: var(--main-color);
+}
+
+.link.underline {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.link.underline::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--main-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.link.underline:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.link.underline.secondary {
+  font-size: 14px;
+  transition: color 0.5s ease-in;
+}
+
+.link.underline.secondary:hover {
+  color: var(--secondary-color);
+}
+
+.link.underline.secondary::before {
+  background-color: var(--secondary-color);
+}
+
+.link.read-more {
+  border-bottom: 1px solid #ccc;
+  transition: color 0.2s ease-out;
+}
+
+.link.read-more:hover {
+  color: var(--secondary-color);
+}
