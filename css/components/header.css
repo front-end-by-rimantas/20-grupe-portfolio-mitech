@@ -21,37 +21,39 @@ header {
                     color: #002FA6;
                     background-color: transparent;
                     cursor: pointer;
-                    transition: transform 0.2s ease-out;
                 }
                 header .header-top > p > a:hover {
-                    cursor: pointer;
-                    transition: transform 0.2s ease-out;
-                }
-                
-
+                    display: inline-block;
+                    line-height: inherit;
+                    text-decoration: none;
+                    color: var(--secondary-color);
+                    animation-name: example;
+                    animation-duration: 2s;
+                  }                  
+@keyframes example {
+    0%   {color: #002FA6;}
+    100% {color: var(--secondary-color);}
+}
         header .header-bottom {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
-            box-sizing: border-box;
+            padding: 0;
             border-color: lightgray;
         }
             header .logo{
                 height: 40px;
             }
-
             header nav {
-                box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
                 gap: 30px;
+                height: 100%;
                 line-height: 20px;
-                padding: 15px 0;
+                padding: 30px 0;
                 color: #000;
             }
-
                 header nav > a {
                     box-sizing: border-box;
                     display: inline-block;
@@ -59,34 +61,50 @@ header {
                     text-decoration: none;
                     color: black;
                 }
-
-                header nav > a:hover {
+             header nav > a:hover {
                     box-sizing: border-box;
                     border-width: 100px;
                     border-bottom: 3px solid;
                     border-color: inherit;
                     color: var(--main-color);
                     text-decoration: none;
-                }
-
+                    line-height: inherit;
+                    text-decoration: none;
+                    /* color: var(--secondary-color); */
+                    animation-name: border-box;
+                    animation-duration: 2s;
+                }                
+@keyframes border-box {
+  0%   {left: 0px;}
+  100% {left: 0px;}
+}
                 header nav > a.active {
                     box-sizing: border-box;
                     border-bottom: 2px solid;
                     color: var(--main-color);
                 }
-
-            header nav > a > .language {
+            header .language {
+                display: inline-block;
                 text-align: left;
-                box-sizing: border-box;
-                border-right: 1px solid;
-                border-color: lightgray;
             }
-
-    header .language {
+    header .vertical {
         display: inline-block;
-        border: border-box;
-        border-right: 1px solid; 
+        color: lightgray;
+        width: 0px;
+        height: 100%;
     }
-    header .fa {
+    header .input {
+        display: inline-block;
         border: none;
+        font-family: "CerebriSans";
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 5px;
+        cursor: text;
+    } 
+    header .fa, .fas {
+        border: none;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 20px;
     }
