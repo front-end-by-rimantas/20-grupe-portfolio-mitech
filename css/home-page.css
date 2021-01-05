@@ -5,9 +5,24 @@
 @import './components/bootstrap-grid.min.css';
 /* components */
 @import './components/header.css';
-
+@import './components/button.css';
+@import './components/backdrop.css';
+@import './components/link.css';
 /* custom: home page sections */
-
 /* header */
 /* hero */
-/* services */
+/* logo banner */
+/* OUR SERVICES */
+@import './components/our-servicers.css';
+/* OUR COMPANY */
+@import "./components/our-company.css";
+/* HIRE US, WHY NOT? */
+@import './components/hire-us.css';
+/* fun fact wrapper */
+/* video */
+/* CASE STUDIES */
+/* TESTIMONIALS */
+/* BLOGS & NEWS */
+@import "./components/blogs-and-news.css";
+/* contacts */
+/* footer */

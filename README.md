@@ -7,22 +7,34 @@
 
 ### 20 group portfolio website project
 
-This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
+This project is for educational purposes only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/20-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/20-grupe-portfolio-mitech/
 
-Design: `null`
+Design: "Mitech" (https://demo.hasthemes.com/mitech-preview/index-infotechno.html)
 
 ## Project features
 
--   Node.js
--   tests (Jest)
--   responsive design
--   repetitive content is generated/rendered;
--   css animations
--   form validations
--   AJAX (data request)
+- Node.js
+- tests (Jest)
+- responsive design
+- repetitive content is generated/rendered;
+- css animations
+- form validations
+- AJAX (data request)
 
 ## Authors
 
 [Rimantas](https://github.com/belauzas)
+
+[Edvardas](https://github.com/Edvardas1989)
+
+[Jolita](https://github.com/sunshinepro)
+
+[Jonas](https://github.com/JonasDudonis)
+
+[Lukas](https://github.com/Lukasring)
+
+[Roberta](https://github.com/Roberta2020)
+
+[Tomas](https://github.com/tomasvilimas)
