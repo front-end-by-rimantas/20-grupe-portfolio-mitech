@@ -1,8 +1,17 @@
-.hero-text {
+.container-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #F4EFE9;
-    vertical-align: middle;
-    
 }
+
+.row-hero-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
 
 h7.hero {
     color: var(--main-color);
@@ -11,8 +20,7 @@ h7.hero {
 }
 
 h1.hero {
-    display: inline-block;
-    /* justify-content: center; */
+    color:rgb(53, 53, 53);
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 50px;
@@ -20,16 +28,58 @@ h1.hero {
 }
 
 p.hero {
+    color:rgb(125, 125, 125);
     font-size: 13px;
     font-weight: 100;
-
+    margin-bottom: 20px;
 }
 
 .hero-img {
+    display: inline-block;
     background-image: url(/images/hero/home-infotechno-main-slider-slide-01-image-01.png);
     background-repeat: no-repeat;
     background-color: #F4EFE9;
     position: relative;
-    background-size: contain;
+    background-size: auto;
+}
+
+.hero-img-2 {
+    width: 100%;
+    height: 100%;
+    max-width: 706px;
+    max-height: 746px;
+}
+
+
+@media (max-width: 860px) {
+    .container-hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    }
+    
+@media (max-width: 450px) {
+    h1.hero {
+        font-size: 25px;
 
 }
+/* @media (max-width: 1200px) {
+        .achievements > .content {
+            grid-template-columns: 1fr 990px 1fr;
+        }
+    }
+    
+@media (max-width: 990px) {
+        .achievements > .content {
+            grid-template-columns: 1fr 720px 1fr;
+        }
+    }
+    
+@media (max-width: 767px) {
+        .achievements > .content {
+            grid-template-columns: 1fr;
+        }
+    } */
