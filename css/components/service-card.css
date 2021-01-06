@@ -1,14 +1,14 @@
-.service-card{
+.service-card-box{
     display: inline-block;
     /* width: 300px; */
     /* height: 320px; */
     text-align: center;
     border-radius: 4px;
-    /* box-shadow: 3px 5px 5px lightgray; */
+    box-shadow: 3px 5px 5px lightgray;
 }
 
 .s-card-image{
-    padding: 50px;
+    padding: 30px 50px;
     display: block;
     margin: auto;
    }
@@ -25,13 +25,60 @@
     color: #696969;
     font-family: "CerebriSans";
     font-size: 12px;
-    font-style: ;
+    font-style: normal;
     font-weight: 100;
 
 }
 
-.s-card-arrow >.btn-round{
-    position: relative;
+.s-card-arrow > btn-round{
+    /* position: relative; */
+    margin-bottom: -60px;
     
 
 }
+
+.s-card-arrow >.btn-round:hover::after {
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    animation: pulse 3s ease-out infinite forwards;
+  }
+  
+  .s-card-arrow > .btn-round:hover {
+    background-color: var(--main-color);
+  }
+  .s-card-arrow > .btn-round:active,
+  .s-card-arrow > .btn-round:focus {
+    outline: none;
+  }
+  
+  @keyframes pulse {
+    60% {
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      opacity: 1;
+      border: 1px solid var(--main-color);
+    }
+    99% {
+      top: -15px;
+      left: -15px;
+      bottom: -15px;
+      right: -15px;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      opacity: 0;
+    }
+  }
