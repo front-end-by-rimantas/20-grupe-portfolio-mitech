@@ -1,0 +1,89 @@
+.case-studies-container {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding-top: 40px;
+}
+
+.case-study-card {
+  display: block;
+  padding: 10px;
+  flex-direction: column;
+  color: var(--main-text-color);
+  text-decoration: none;
+  min-width: 350px;
+  max-width: 400px;
+  text-align: center;
+  font-weight: 300;
+  text-align: left;
+  transition: transform 0.5s ease-out;
+}
+
+.case-study__content {
+  padding: 10px 20px;
+}
+
+.case-study__img {
+  width: 100%;
+}
+
+.case-study__title {
+  color: var(--main-text-color);
+  font-size: 18px;
+}
+
+.case-study__subtitle {
+  color: var(--main-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.case-study__text {
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.case-study__link-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 0 0 6px 6px;
+}
+
+.case-study__link-container > p {
+  color: var(--main-color);
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+.case-study__link-container > p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--main-color);
+  transition: height 0.5s ease-out;
+}
+
+/* hover effects */
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-card:hover .case-study__link-container > p::after {
+  height: 100%;
+}
+
+.case-study-card:hover .case-study__link-container > p {
+  color: #fff;
+}
