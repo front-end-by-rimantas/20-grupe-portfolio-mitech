@@ -13,13 +13,13 @@
   }
 
 
-h7.hero {
+  .hero-text-top {
     color: var(--main-color);
     font-size: 20x;
     font-weight: lighter;
 }
 
-h1.hero {
+.hero-text-middle {
     color: var(--text-primary-color);
     margin-bottom: 20px;
     margin-top: 20px;
@@ -27,7 +27,7 @@ h1.hero {
     font-weight: lighter;
 }
 
-p.hero {
+.hero-text-bottom  {
     color: var(--text-secondary-color);
     font-size: 13px;
     font-weight: 100;
@@ -50,6 +50,15 @@ p.hero {
     max-height: 746px;
 }
 
+@media (max-width: 1300px) {
+    .hero-text-middle {
+        font-size: 40px;
+    }
+    .hero-img-2 {
+        width: 80%;
+    }
+}
+
 @media (max-width: 990px) {
     .container-hero {
     display: flex;
@@ -63,13 +72,13 @@ p.hero {
         width: 70%;
         height: 70%;
     }
-    h1.hero {
+    .hero-text-middle {
         font-size: 35px;
     }
 }
 
 @media (max-width: 550px) {
-    h1.hero {
+    .hero-text-middle {
         font-size: 25px;
     }
     .hero-img-2 {
