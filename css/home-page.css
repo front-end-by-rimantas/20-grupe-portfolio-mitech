@@ -15,6 +15,7 @@
 /* logo banner */
 /* OUR SERVICES */
 @import './components/our-servicers.css';
+@import './components/service-card.css';
 /* OUR COMPANY */
 @import './components/our-company.css';
 /* HIRE US, WHY NOT? */
@@ -28,3 +29,4 @@
 /* contacts */
 @import './components/contacts.css';
 /* footer */
+@import "./components/footer.css";
