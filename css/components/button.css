@@ -3,7 +3,7 @@
   background: var(--main-color);
   color: #fff;
   font-size: 16px;
-  font-family: "CerebriSans";
+  font-family: 'CerebriSans';
   border: none;
   text-decoration: none;
   font-weight: 300;
@@ -11,10 +11,15 @@
   margin: 8px;
   border-radius: 4px;
   cursor: pointer;
-  transition: transform 0.2s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn.secondary {
+  background: var(--secondary-color);
 }
 
 .btn:hover {
+  background: var(--main-color);
   transform: translateY(-2px);
 }
 
@@ -43,7 +48,7 @@
 }
 
 .btn-round::before {
-  content: "➜";
+  content: '➜';
 }
 
 .btn-round:hover::after {
@@ -53,7 +58,7 @@
   left: 0px;
   bottom: 0px;
   right: 0px;
-  content: "";
+  content: '';
   display: block;
   border-radius: 50%;
   animation: pulse 3s ease-out infinite forwards;
