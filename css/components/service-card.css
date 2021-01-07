@@ -1,4 +1,4 @@
-.service-card{
+.service-card-box{
     display: inline-block;
     /* width: 300px; */
     /* height: 320px; */
@@ -8,23 +8,77 @@
 }
 
 .s-card-image{
-    width: 100px;
-    /* padding: 50px; */
+    padding: 30px 50px;
     display: block;
     margin: auto;
-   
-}
+   }
 
 .s-card-text{
-    margin: 20px 30px 60px 30px;
+    margin: 20px 30px 30px 30px;
 }
-.s-card-text > h3{
+.s-card-text > h4{
     font-size: 20px;
     padding-bottom: 15px;
 }
 .s-card-text > p{
-    font-size: 15px;
     line-height: 25px;
     color: #696969;
+    font-family: "CerebriSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
 
 }
+
+.s-card-arrow > btn-round{
+    /* position: relative; */
+    margin-bottom: -60px;
+    
+
+}
+
+.s-card-arrow >.btn-round:hover::after {
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    animation: pulse 3s ease-out infinite forwards;
+  }
+  
+  .s-card-arrow > .btn-round:hover {
+    background-color: var(--main-color);
+  }
+  .s-card-arrow > .btn-round:active,
+  .s-card-arrow > .btn-round:focus {
+    outline: none;
+  }
+  
+  @keyframes pulse {
+    60% {
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      opacity: 1;
+      border: 1px solid var(--main-color);
+    }
+    99% {
+      top: -15px;
+      left: -15px;
+      bottom: -15px;
+      right: -15px;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      opacity: 0;
+    }
+  }
