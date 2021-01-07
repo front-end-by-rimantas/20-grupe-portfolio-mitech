@@ -3,6 +3,7 @@
 @import './components/reset.css';
 /* 3rd party */
 @import './components/bootstrap-grid.min.css';
+@import './components/font-awesome.min.css';
 /* components */
 @import './components/header.css';
 @import './components/button.css';
@@ -14,8 +15,9 @@
 /* logo banner */
 /* OUR SERVICES */
 @import './components/our-servicers.css';
+@import './components/service-card.css';
 /* OUR COMPANY */
-@import "./components/our-company.css";
+@import './components/our-company.css';
 /* HIRE US, WHY NOT? */
 @import './components/hire-us.css';
 /* fun fact wrapper */
@@ -23,6 +25,8 @@
 /* CASE STUDIES */
 /* TESTIMONIALS */
 /* BLOGS & NEWS */
-@import "./components/blogs-and-news.css";
+@import './components/blogs-and-news.css';
 /* contacts */
+@import './components/contacts.css';
 /* footer */
+@import "./components/footer.css";
