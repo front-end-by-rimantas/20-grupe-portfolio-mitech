@@ -1,7 +1,7 @@
 .container-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #F4EFE9;
+    background-color: var(--bg-secondary-color);
 }
 
 .row-hero-text {
@@ -20,7 +20,7 @@ h7.hero {
 }
 
 h1.hero {
-    color:rgb(53, 53, 53);
+    color: var(--text-primary-color);
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 50px;
@@ -28,7 +28,7 @@ h1.hero {
 }
 
 p.hero {
-    color:rgb(125, 125, 125);
+    color: var(--text-secondary-color);
     font-size: 13px;
     font-weight: 100;
     margin-bottom: 20px;
@@ -38,7 +38,7 @@ p.hero {
     display: inline-block;
     background-image: url(/images/hero/home-infotechno-main-slider-slide-01-image-01.png);
     background-repeat: no-repeat;
-    background-color: #F4EFE9;
+    background-color: var(--bg-secondary-color);
     position: relative;
     background-size: auto;
 }
@@ -50,8 +50,7 @@ p.hero {
     max-height: 746px;
 }
 
-
-@media (max-width: 860px) {
+@media (max-width: 990px) {
     .container-hero {
     display: flex;
     flex-direction: column;
@@ -60,26 +59,21 @@ p.hero {
     justify-content: center;
     text-align: center;
     }
-    
-@media (max-width: 450px) {
+    .hero-img-2 {
+        width: 70%;
+        height: 70%;
+    }
+    h1.hero {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 550px) {
     h1.hero {
         font-size: 25px;
-
+    }
+    .hero-img-2 {
+        width: 50%;
+        height: 50%;
+    }
 }
-/* @media (max-width: 1200px) {
-        .achievements > .content {
-            grid-template-columns: 1fr 990px 1fr;
-        }
-    }
-    
-@media (max-width: 990px) {
-        .achievements > .content {
-            grid-template-columns: 1fr 720px 1fr;
-        }
-    }
-    
-@media (max-width: 767px) {
-        .achievements > .content {
-            grid-template-columns: 1fr;
-        }
-    } */
