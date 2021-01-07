@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--bg-secondary-color);
+    width: 100%;
 }
 
 .row-hero-text {
