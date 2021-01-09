@@ -1,6 +1,7 @@
 .case-studies-container {
   text-align: center;
   /* display: flex;
+  flex-wrap: nowrap;
   justify-content: flex-start; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -12,7 +13,9 @@
 
 .case-study-card {
   display: block;
-  pointer-events: none;
+  position: relative;
+  z-index: 2;
+  /* pointer-events: none; */
   padding: 10px;
   flex-direction: column;
   color: var(--main-text-color);

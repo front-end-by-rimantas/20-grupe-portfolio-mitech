@@ -1,18 +1,23 @@
+import { findElementDOM } from '../../util/findElementDOM.js';
+import { isValidCaseStudyData } from './isValidCaseStudyData.js';
+
 export function caseStudyCards(cardsData, selector) {
-    const DOM = document.querySelector(selector);
+    const DOM = findElementDOM(selector);
+    if (!DOM) {
+        throw new Error('Invalid element selector!');
+    }
     let HTML = '';
-    console.log(cardsData);
     for (const cardData of cardsData) {
         HTML += caseStudyCard(cardData);
-        // console.log(cardData);
     }
+
+    // paskui rebderinimas bus kitur, sita funkcija tik grazins elementus
     DOM.innerHTML = HTML;
-    console.log(DOM.innerHTML);
-    console.log(HTML);
 }
 
 export function caseStudyCard(cardData) {
-    return `
+    return isValidCaseStudyData(cardData)
+        ? `
   <a href="#" class="case-study-card">
     <img
         class="case-study__img"
@@ -27,5 +32,6 @@ export function caseStudyCard(cardData) {
     <div class="case-study__link-container">
         <p href="#">View case study -></p>
     </div>
-</a>`;
+</a>`
+        : '';
 }
