@@ -11,7 +11,7 @@
 @import './components/link.css';
 /* custom: home page sections */
 /* header */
-/* hero */
+@import "./components/hero.css";
 /* logo banner */
 /* OUR SERVICES */
 @import './components/our-servicers.css';
