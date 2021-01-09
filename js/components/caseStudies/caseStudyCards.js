@@ -1,10 +1,14 @@
 import { findElementDOM } from '../../util/findElementDOM.js';
 import { isValidCaseStudyData } from './isValidCaseStudyData.js';
+import { Validator } from '../Validator/Validator.js';
 
 export function caseStudyCards(cardsData, selector) {
     const DOM = findElementDOM(selector);
     if (!DOM) {
         throw new Error('Invalid element selector!');
+    }
+    if (!Validator.isArray(cardsData)) {
+        throw new Error('Cards data must be an array of objects!');
     }
     let HTML = '';
     for (const cardData of cardsData) {
@@ -30,7 +34,7 @@ export function caseStudyCard(cardData) {
         <p class="case-study__text">${cardData.text}</p>
     </div>
     <div class="case-study__link-container">
-        <p href="#">View case study -></p>
+        <p href="#">View case study ➜</p>
     </div>
 </a>`
         : '';
