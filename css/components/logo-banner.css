@@ -1,0 +1,31 @@
+.logo-slider{
+    padding: 50px;
+    display: inline-grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.logo-banner{
+    display: inline-block;
+    margin: auto;
+    width: 150px;
+    margin-right: 30px;
+    position: relative;
+}
+.logo-banner .logo-hover{
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: absolute;
+}
+.logo-banner:hover .logo-hover {display: inline;}
+
+
+
+    /* @keyframe logo{
+        50%{transform: scale(0.7);}
+        100%{ transform: scale(1); }
+         } */
+
