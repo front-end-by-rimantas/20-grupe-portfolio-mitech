@@ -23,6 +23,19 @@
 .logo-banner:hover .logo-hover {display: inline;}
 
 
+/*@media (max-width: 750px) {
+    .logo-slider{
+        padding: 50px;
+        display: inline-grid;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+@media (max-width: 550px) {
+   
+    }
+*/
+
 
     /* @keyframe logo{
         50%{transform: scale(0.7);}
