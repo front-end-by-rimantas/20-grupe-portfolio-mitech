@@ -67,6 +67,28 @@ header {
                     align-content: center;
                     text-align: center;
                     display: inline-block;
+                    font-size: 17px;
+                    text-decoration: none;
+                    color: black;        
+                }
+             header nav > a:hover {
+                    box-sizing: border-box;
+                    border-width: 100px;
+                    border-bottom: 3px solid;
+                    border-color: inherit;
+                    color: var(--main-color);
+                    text-decoration: none;
+                    line-height: inherit;
+                    text-decoration: none;
+                    /* color: var(--secondary-color); */
+                    animation-name: border-box;
+                    animation-duration: 2s;
+                }                
+@keyframes border-box {
+  0%   {left: 0px;}
+  100% {left: 0px;}
+}
+                header nav > a.active {
                     box-sizing: border-box;
                     border-bottom: 2px solid;
                     font-size: 15px;
@@ -107,7 +129,6 @@ header {
                 margin-right: -15px;
                 box-sizing: border-box;
                 border-left: lightgrey;
-                
             }
                 .hamburger {
                     visibility: hidden;
@@ -121,8 +142,7 @@ header {
                         order: 4;
                         background-color: #333;
                         margin: 5px;
-                        }
-                    
+} 
                     .hamburger:hover > .linetop
                          {
                             width: 19px;
@@ -147,7 +167,6 @@ header {
                         color: var(--secondary-color);
                         transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
                         }
-
                     .fa-ellipsis-h {
                         visibility: hidden;
                     }
@@ -164,7 +183,6 @@ header {
                     margin: 0;
                     padding: 0;
                 }
-
                     .language > ul > li > a {
                         display: inline-block;
                         line-height: inherit;
@@ -209,8 +227,7 @@ header {
         color: lightgray;
         width: 0px;
         height: 100%;
-    }
-
+}
     header .input {
         display: inline-block;
         height: 100%;
