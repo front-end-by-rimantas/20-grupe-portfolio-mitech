@@ -17,5 +17,3 @@ console.log(naviBar);
 // fun facts
 const funFacts = new FunFacts(funFactsData);
 funFacts.init();
-
-console.log(funFacts);
