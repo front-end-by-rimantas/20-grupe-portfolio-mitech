@@ -1,16 +1,16 @@
 const ourCompanyData = [
     {
-        number: 01,
+        number: 1,
         title: 'How we can help your business?',
     },
     {
-        number: 02,
+        number: 2,
         title: 'Why become our partner?',
     },
     {
-        number: 03,
+        number: 3,
         title: 'What are the best of Mitech?',
     },
-]
+];
 
 export {ourCompanyData}

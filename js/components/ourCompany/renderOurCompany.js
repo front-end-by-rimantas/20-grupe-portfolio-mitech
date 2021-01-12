@@ -1,20 +1,24 @@
-function renderOurCompany() {
-    // input validation
+import {isValidOurCompanyInput} from './isValidOurCompanyInput.js';
+import {isValidOurCompanyItem} from './isValidOurCompanyItem.js';
 
+function renderOurCompany(selector, data) {
 
-    //kuur bus randama
-    const DOM = document.querySelector(selection);
+    if (!isValidOurCompanyInput(selector, data)) {
+    return false;
+    }
+
+    const DOM = document.querySelector(selector);
     if(!DOM) {
         return false;
     }
 
-    //logic
     let HTML = '';
 
-    for (let item of data) {
+    for(let item of data) {
         if(!isValidOurCompanyItem(item)) {
             continue;
         }
+
         HTML += `<a href="#" class="list-member">
                     <div class="list-number">
                     <div>${item.number}</div>
@@ -22,17 +26,20 @@ function renderOurCompany() {
                     <div class="faq">
                     <div class="question">${item.title}</div>
                     </div>
-                </a>`
+                </a>`;
     }
 
-    //post logic validation
     if(HTML === '') {
         return false;
     }
 
-    // return result
     DOM.innerHTML = HTML;
     return true;
+    
+function formatNumber(number) {
+      if(number < 10)
+        return '0' + number;
+    } 
 }
-
+ 
 export {renderOurCompany}

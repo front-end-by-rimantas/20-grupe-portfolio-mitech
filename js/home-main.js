@@ -18,5 +18,4 @@ console.log(naviBar);
 // hero
 // services
 //our company
-renderOurCompany('.list', ourCompanyData);
-
+renderOurCompany('.right-company-column > .list', ourCompanyData);
