@@ -5,7 +5,7 @@ import { naviData} from './data/naviData.js';
 // hero
 // services
 // fun facts
-import {FunFacts, funFacts} from './components/funFacts/FunFacts.js';
+import {FunFacts} from './components/funFacts/FunFacts.js';
 import {funFactsData} from './data/funFactsData.js';
 // CODE EXECUTION
 // header
@@ -17,3 +17,5 @@ console.log(naviBar);
 // fun facts
 const funFacts = new FunFacts(funFactsData);
 funFacts.init();
+
+console.log(funFacts);

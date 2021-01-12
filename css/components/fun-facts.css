@@ -1,0 +1,29 @@
+.fun-facts {
+    display: inline-block;
+    border: 1px solid #ededed;
+}
+.fun-fact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 100px 0px;
+    text-align: center;
+}
+.fun-fact-card > p {
+    color: var(--text-primary-color);
+    font-size: 24px;
+    font-weight: 100;
+}
+.fun-fact-card > div {
+    color: var(--main-color);
+    font-size: 65px;
+    font-weight: 600;
+}
+.fun-fact-card > span {
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}

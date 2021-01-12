@@ -10,21 +10,21 @@ class FunFacts {
         this.DOM = null;
         this.validUsedData = [];
         this.animationDuration = 5;
-        this.fps = 60;
+        this.fps = 30;
     }
 
     init() {
-        if(!this.isValidSelector() || this. isValidData()) {
+        if(!this.isValidSelector() || !this.isValidData()) {
             return false;
         }
         this.limit = this.isValidLimit() ? this.limit : this.defaultLimit;
         this.render();
-        this.Event();
+        this.addEvents();
         return true;
     }
 
     isValidSelector() {
-        if(typeof this.selector === 'string' ||
+        if(typeof this.selector !== 'string' ||
         this.selector === '') {
             return false;
         }
@@ -36,7 +36,7 @@ class FunFacts {
         return true;
     }
     isValidData() {
-        if(Array.isArray(this.data) ||
+        if(!Array.isArray(this.data) ||
         this.data.length === 0) {
             return false;
         }
@@ -51,9 +51,6 @@ class FunFacts {
         }
         return true;
     }
-    isValidFunFactsItem() {
-        return true;
-    }
 
     render() {
         let HTML = '';
@@ -63,15 +60,17 @@ class FunFacts {
             if(validItems === this.limit) {
                 break;
             }
-            if(!this.isValidFunFactsItem(item)) {
+            if(!isValidFunFactsItem(item)) {
                 continue;
             }
             this.validUsedData.push(item);
             
-            HTML += `<div class="fun-fact-card">
+            HTML += `<div class="col-xs-12 col-sm-6 col-md-3 fun-facts">
+                        <div class="fun-fact-card">
                         <p>${item.title}</p>
                         <div>${item.number}</div>
                         <span>${item.label}</span>
+                        </div>
                     </div>`;
             validItems++;
         }
@@ -102,7 +101,7 @@ animateNumber(index, DOM) {
         DOM.innerText = value;
 
         if(value >= this.validUsedData[index].number) {
-            DOM.innerText = this.validUsedData[index].numberr;
+            DOM.innerText = this.validUsedData[index].number;
             clearInterval(timer);
         }
     }, 1000 / this.fps);
