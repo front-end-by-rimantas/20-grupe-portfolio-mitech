@@ -44,11 +44,11 @@
     margin-top: 12px;
     border-top: 2px solid var(--border-main-color);
 }
-.faq > h3 {
+.question {
     color:#343a40;
     margin-top: 20px;
 }
-.faq > h3:after {
+.faq > .question:after {
     content: "➜";
     float: right;
     color:#343a40;
@@ -56,10 +56,10 @@
 .list-member:hover > .list-number {
     color: var(--main-color);
 }
-.list-member:hover > .faq > h3 {
+.list-member:hover > .faq > .question {
     color: var(--main-color);
 }
-.list-member:hover > .faq > h3::after {
+.list-member:hover > .faq > .question::after {
     color: var(--main-color);
     animation: in 0.8s;
 }
