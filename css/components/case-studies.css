@@ -1,0 +1,131 @@
+.case-studies-bg {
+  display: grid;
+  width: 100%;
+  padding: 80px 0;
+  background: url('../../images/bg/mitech-home-infotechno-case-study-section-bg.png')
+    no-repeat bottom left;
+}
+
+.case-studies-container {
+  text-align: center;
+  /* alternatyva su flex vietoj grid */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: flex-start;
+  /* display: grid;
+  grid-template-columns: repeat(3, 33.3333%);
+  grid-auto-columns: 33.3333%;
+  grid-auto-flow: column; */
+  overflow-x: auto;
+  padding-top: 40px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.case-study-card {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  flex-direction: column;
+  color: var(--main-text-color);
+  text-decoration: none;
+  min-width: 33.3333%;
+  font-weight: 300;
+  text-align: left;
+  transition: transform 0.5s ease-out;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.case-study__content {
+  padding: 10px 20px;
+}
+
+.case-study__img {
+  width: 100%;
+}
+
+.case-study__title {
+  color: var(--main-text-color);
+  font-size: 18px;
+}
+
+.case-study__subtitle {
+  color: var(--main-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.case-study__text {
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.case-study__link-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 0 0 6px 6px;
+}
+
+.case-study__link-container > p {
+  color: var(--main-color);
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+.case-study__link-container > p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--main-color);
+  transition: height 0.5s ease-out;
+}
+
+/* hover effects */
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-card:hover .case-study__link-container > p::after {
+  height: 100%;
+}
+
+.case-study-card:hover .case-study__link-container > p {
+  color: #fff;
+}
+
+/* media queries */
+
+@media (max-width: 992px) {
+  /* .case-studies-container {
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-columns: 50%;
+  } */
+  .case-study-card {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 635px) {
+  /* .case-studies-container {
+    grid-template-columns: 100%;
+    grid-auto-columns: 100%;
+  } */
+  .case-study-card {
+    min-width: 100%;
+  }
+}
