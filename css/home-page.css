@@ -24,10 +24,11 @@
 @import './components/fun-facts.css';
 /* video */
 /* CASE STUDIES */
+@import './components/case-studies.css';
 /* TESTIMONIALS */
 /* BLOGS & NEWS */
 @import './components/blogs-and-news.css';
 /* contacts */
 @import './components/contacts.css';
 /* footer */
-@import "./components/footer.css";
+@import './components/footer.css';
