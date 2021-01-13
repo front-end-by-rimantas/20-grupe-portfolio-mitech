@@ -6,7 +6,7 @@
     padding: 20px 20px;
 }
 .company-paragraph {
-    color: #696969;
+    color: var(--text-secondary-color);
     font-family: "CerebriSans";
     font-size: 15px;
     font-style: normal;
@@ -42,7 +42,7 @@
     grid-column: 2/3;
     height: 100%;
     margin-top: 12px;
-    border-top: 2px solid #ededed;
+    border-top: 2px solid var(--border-main-color);
 }
 .question {
     color:#343a40;
