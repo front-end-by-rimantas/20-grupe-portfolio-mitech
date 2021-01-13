@@ -1,0 +1,90 @@
+.container-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+}
+
+.row-hero-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+  .hero-text-top {
+    color: var(--main-color);
+    font-size: 20x;
+    font-weight: lighter;
+    
+}
+
+.hero-text-middle {
+    color: var(--text-primary-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.hero-text-bottom  {
+    color: var(--text-secondary-color);
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    display: inline-block;
+    background-image: url(/images/hero/home-infotechno-main-slider-slide-01-image-01.png);
+    background-repeat: no-repeat;
+    background-color: var(--bg-secondary-color);
+    position: relative;
+    background-size: auto;
+}
+
+.hero-img-2 {
+    width: 100%;
+    height: 100%;
+    max-width: 706px;
+    max-height: 746px;
+}
+
+@media (max-width: 1300px) {
+    .hero-text-middle {
+        font-size: 40px;
+    }
+    .hero-img-2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 990px) {
+    .container-hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .hero-img-2 {
+        width: 70%;
+        height: 70%;
+    }
+    .hero-text-middle {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-text-middle {
+        font-size: 25px;
+    }
+    .hero-img-2 {
+        width: 50%;
+        height: 50%;
+    }
+}
